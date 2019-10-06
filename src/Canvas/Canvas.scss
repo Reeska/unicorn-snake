@@ -1,0 +1,51 @@
+div {
+    outline: none;
+}
+
+table {
+    border-spacing: 0;
+    border: solid 1px #ddd;
+    position: relative;
+}
+
+.lost {
+    background-color: rgba(255, 255, 255, 0.5);
+
+    &::before {
+        display: flex;
+        position: absolute;
+        white-space: pre;
+        text-align: center;
+        content: 'YOU LOSE\A😭';
+        color: #dc24b4;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 45px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.paused {
+    background-color: rgba(255, 255, 255, 0.5);
+
+    &::before {
+        display: flex;
+        position: absolute;
+        white-space: pre;
+        text-align: center;
+        content: 'PAUSE';
+        color: #dc24b4;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 45px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+}
