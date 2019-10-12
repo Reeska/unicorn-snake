@@ -1,9 +1,9 @@
 import React from 'react'
-import {DOWN, LEFT, RIGHT, UP} from "../Constants"
+import {DOWN, LEFT, RIGHT, UP} from '../../Constants'
 
 import './Cell.scss'
 
-export class Cell extends React.Component {
+class Cell extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -35,3 +35,5 @@ export class Cell extends React.Component {
         )
     }
 }
+
+export default Cell
