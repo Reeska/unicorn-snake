@@ -8,7 +8,7 @@ const Canvas = ({ canvas, renderCell, reference, onKeyDown, className }) => {
                 <tbody>
                 {canvas.map((column, columnIndex) => (
                     <tr key={`column-${columnIndex}`}>
-                        {column.map((cell, cellIndex) => renderCell(cell, cellIndex))}
+                        {column.map((cell, cellIndex) => renderCell(cell, cellIndex, columnIndex))}
                     </tr>
                 ))}
                 </tbody>

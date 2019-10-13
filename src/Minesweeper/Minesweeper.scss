@@ -1,0 +1,52 @@
+table {
+    border: 1px solid #ddd;
+    border-spacing: 0;
+
+    td {
+        font-weight: bold;
+        border: 1px solid #ddd;
+        cursor: pointer;
+    }
+}
+
+.value-1 { color: blue; }
+.value-2 { color: green; }
+.value-3 { color: red; }
+.value-4 { color: purple; }
+.value-5 { color: maroon; }
+.value-6 { color: darkturquoise; }
+.value-7 { color: black; }
+.value-8 { color: gray; }
+
+.visible {
+    background-color: #d8d7d7;
+}
+
+.won,
+.lost {
+    background-color: rgba(255, 255, 255, 0.5);
+
+    &::before {
+        display: flex;
+        position: absolute;
+        white-space: pre;
+        text-align: center;
+        content: 'YOU LOSE\A💥';
+        color: #e41a00;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 45px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.won {
+    &::before {
+        content: 'YOU WIN\A💪';
+        color: #51d889;
+    }
+}
